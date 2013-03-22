@@ -828,3 +828,10 @@ overflow: hidden;
 text-align: left;
 }
 header{margin-bottom:40px;}
+
+.five-wide .span4 {
+width: 38.8% !important;
+}
+.five-wide .span3{
+width: 18.7%!important;
+}
