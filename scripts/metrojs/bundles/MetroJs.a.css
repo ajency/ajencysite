@@ -1,0 +1,442 @@
+﻿/*#source /Scripts/MetroJs/src/css/appbar.css */
+/* sizes */
+.appbar {
+  font-size: .9em;
+  height: 60px;
+  max-height: 100%;
+  padding: 10px 0;
+  width: 100%;
+}
+.appbar.small {
+  height: 28px;
+}
+.appbar-buttons {
+  padding: 0 0 2px;
+  width: 252px;
+}
+.appbar.small .appbar-buttons {
+  width: 162px;
+}
+.appbar a.etc,
+.appbar a.etc:hover,
+.appbar a.etc:visited {
+  font-size: 32px;
+  /* add some extra padding to make it easier to touch */
+
+  height: 60px;
+  width: 90px;
+}
+.appbar.small a.etc,
+.appbar.small a.etc:hover,
+.appbar.small a.etc:visited {
+  font-size: 16px;
+  height: 60px;
+  width: 90px;
+}
+.appbar .theme-options {
+  display: block;
+  margin: 0px auto;
+  position: relative;
+  max-width: 620px;
+  width: 85%;
+}
+.appbar .base-theme-options {
+  display: block;
+  margin: 0px auto;
+  position: relative;
+  max-width: 120px;
+  width: 30%;
+}
+/* application-bar styles */
+.appbar {
+  background-color: #212021;
+  bottom: 0px;
+  color: #fff;
+  left: 0px;
+  line-height: normal;
+  margin: 0;
+  overflow: hidden;
+  position: fixed;
+  text-align: right;
+  z-index: 100;
+  -ms-touch-action: manipulation;
+}
+.light .appbar {
+  background-color: #dfdfdf;
+  color: #000;
+}
+.dark .appbar {
+  background-color: #212021;
+}
+.appbar .clear {
+  clear: both;
+}
+.light .appbar-buttons li a {
+  color: #000;
+}
+.appbar-buttons a > img {
+  background-image: url('images/metroIcons-2.jpg');
+  background-repeat: no-repeat;
+  height: 64px;
+  width: 64px;
+  border: none;
+}
+.appbar-buttons a.small > img {
+  height: 32px;
+  width: 32px;
+}
+.light .appbar-buttons a > img {
+  background-image: url('images/metroIcons_light-2.jpg');
+}
+.appbar-buttons {
+  position: relative;
+  margin: 0 auto;
+  text-align: right;
+}
+.appbar-buttons a.search > img {
+  background-position: -12px -12px;
+}
+.appbar-buttons a.home > img {
+  background-position: -104px -12px;
+}
+.appbar-buttons a.twitter > img {
+  background-position: -196px -12px;
+}
+.appbar-buttons a.calendar > img {
+  background-position: -288px -12px;
+}
+.appbar-buttons a.storm > img {
+  background-position: -380px -12px;
+}
+.appbar-buttons a.down > img {
+  background-position: -472px -12px;
+}
+.appbar-buttons a.camera > img {
+  background-position: -12px -99px;
+}
+.appbar-buttons a.camcorder > img {
+  background-position: -104px -99px;
+}
+.appbar-buttons a.qmark > img,
+.appbar-buttons a.about > img {
+  background-position: -196px -99px;
+}
+.appbar-buttons a.share > img {
+  background-position: -288px -99px;
+}
+.appbar-buttons a.rain > img {
+  background-position: -380px -99px;
+}
+.appbar-buttons a.cancel > img,
+.appbar-buttons a.close > img {
+  background-position: -472px -99px;
+}
+.appbar-buttons a.delete > img,
+.appbar-buttons a.trash > img {
+  background-position: -12px -188px;
+}
+.appbar-buttons a.tag > img {
+  background-position: -104px -188px;
+}
+.appbar-buttons a.addcontact > img {
+  background-position: -196px -188px;
+}
+.appbar-buttons a.save > img {
+  background-position: -288px -188px;
+}
+.appbar-buttons a.snow > img {
+  background-position: -380px -188px;
+}
+.appbar-buttons a.msg > img {
+  background-position: -472px -188px;
+}
+.appbar-buttons a.email > img {
+  background-position: -12px -274px;
+}
+.appbar-buttons a.clock > img {
+  background-position: -104px -274px;
+}
+.appbar-buttons a.edit > img {
+  background-position: -196px -274px;
+}
+.appbar-buttons a.circle > img {
+  background-position: -288px -274px;
+}
+.appbar-buttons a.moon > img {
+  background-position: -380px -274px;
+}
+.appbar-buttons a.calc > img {
+  background-position: -12px -362px;
+}
+.appbar-buttons a.gear > img {
+  background-position: -104px -362px;
+}
+.appbar-buttons a.plus > img {
+  background-position: -196px -362px;
+}
+.appbar-buttons a.dot > img {
+  background-position: -288px -362px;
+}
+.appbar-buttons a.restart > img,
+.appbar-buttons a.return > img {
+  background-position: -380px -362px;
+}
+.appbar-buttons a.add > img {
+  background-position: -472px -362px;
+}
+.appbar-buttons a.phone > img {
+  background-position: -12px -453px;
+}
+.appbar-buttons a.film > img {
+  background-position: -104px -453px;
+}
+.appbar-buttons a.back > img {
+  background-position: -196px -453px;
+}
+.appbar-buttons a.car > img {
+  background-position: -288px -453px;
+}
+.appbar-buttons a.forward > img {
+  background-position: -380px -453px;
+}
+.appbar-buttons a.selectmany > img {
+  background-position: -472px -453px;
+}
+.appbar-buttons a.stop > img {
+  background-position: -12px -538px;
+}
+.appbar-buttons a.contacts > img {
+  background-position: -104px -538px;
+}
+.appbar-buttons a.select > img {
+  background-position: -196px -538px;
+}
+.appbar-buttons a.sun > img {
+  background-position: -288px -538px;
+}
+.appbar-buttons a.dpad > img {
+  background-position: -380px -538px;
+}
+.appbar-buttons a.play > img {
+  background-position: -472px -538px;
+}
+.appbar-buttons a.small.search > img {
+  background-position: -562px -6px;
+}
+.appbar-buttons a.small.home > img {
+  background-position: -608px -6px;
+}
+.appbar-buttons a.small.twitter > img {
+  background-position: -654px -6px;
+}
+.appbar-buttons a.small.calendar > img {
+  background-position: -700px -6px;
+}
+.appbar-buttons a.small.storm > img {
+  background-position: -746px -6px;
+}
+.appbar-buttons a.small.down > img {
+  background-position: -792px -6px;
+}
+.appbar-buttons a.small.camera > img {
+  background-position: -562px -50px;
+}
+.appbar-buttons a.small.camcorder > img {
+  background-position: -608px -50px;
+}
+.appbar-buttons a.small.qmark > img,
+.appbar-buttons a.small.about > img {
+  background-position: -654px -50px;
+}
+.appbar-buttons a.small.share > img {
+  background-position: -700px -50px;
+}
+.appbar-buttons a.small.rain > img {
+  background-position: -746px -50px;
+}
+.appbar-buttons a.small.cancel > img,
+.appbar-buttons a.small.close > img {
+  background-position: -792px -50px;
+}
+.appbar-buttons a.small.delete > img,
+.appbar-buttons a.small.trash > img {
+  background-position: -562px -94px;
+}
+.appbar-buttons a.small.tag > img {
+  background-position: -608px -94px;
+}
+.appbar-buttons a.small.addcontact > img {
+  background-position: -654px -94px;
+}
+.appbar-buttons a.small.save > img {
+  background-position: -700px -94px;
+}
+.appbar-buttons a.small.snow > img {
+  background-position: -746px -94px;
+}
+.appbar-buttons a.small.msg > img {
+  background-position: -792px -94px;
+}
+.appbar-buttons a.small.email > img {
+  background-position: -562px -137px;
+}
+.appbar-buttons a.small.clock > img {
+  background-position: -608px -137px;
+}
+.appbar-buttons a.small.edit > img {
+  background-position: -654px -137px;
+}
+.appbar-buttons a.small.circle > img {
+  background-position: -700px -137px;
+}
+.appbar-buttons a.small.moon > img {
+  background-position: -746px -137px;
+}
+.appbar-buttons a.small.calc > img {
+  background-position: -562px -181px;
+}
+.appbar-buttons a.small.gear > img {
+  background-position: -608px -181px;
+}
+.appbar-buttons a.small.plus > img {
+  background-position: -654px -181px;
+}
+.appbar-buttons a.small.dot > img {
+  background-position: -700px -181px;
+}
+.appbar-buttons a.small.restart > img,
+.appbar-buttons a.small.return > img {
+  background-position: -746px -181px;
+}
+.appbar-buttons a.small.add > img {
+  background-position: -792px -181px;
+}
+.appbar-buttons a.small.phone > img {
+  background-position: -562px -226px;
+}
+.appbar-buttons a.small.film > img {
+  background-position: -608px -226px;
+}
+.appbar-buttons a.small.back > img {
+  background-position: -654px -226px;
+}
+.appbar-buttons a.small.car > img {
+  background-position: -700px -226px;
+}
+.appbar-buttons a.small.forward > img {
+  background-position: -746px -226px;
+}
+.appbar-buttons a.small.selectmany > img {
+  background-position: -792px -226px;
+}
+.appbar-buttons a.small.stop > img {
+  background-position: -562px -269px;
+}
+.appbar-buttons a.small.contacts > img {
+  background-position: -608px -269px;
+}
+.appbar-buttons a.small.select > img {
+  background-position: -654px -269px;
+}
+.appbar-buttons a.small.sun > img {
+  background-position: -700px -269px;
+}
+.appbar-buttons a.small.dpad > img {
+  background-position: -746px -269px;
+}
+.appbar-buttons a.small.play > img {
+  background-position: -792px -269px;
+}
+.appbar-buttons li {
+  display: inline;
+  padding: 0 10px;
+  float: left;
+  list-style: none;
+}
+.appbar-buttons li a {
+  font-weight: bold;
+  background-color: transparent;
+  color: #fff;
+}
+.appbar-buttons li a:active,
+.appbar-buttons ul#menu li.selected a,
+.appbar-buttons .appbar-buttons li a:hover {
+  text-decoration: none;
+}
+.appbar a.etc,
+.appbar a.etc:hover,
+.appbar a.etc:visited {
+  color: #fff;
+  cursor: pointer;
+  display: block;
+  position: absolute;
+  right: 8px;
+  text-decoration: none;
+  top: 0px;
+  z-index: 100;
+}
+.light .appbar a.etc,
+.light .appbar a.etc:hover,
+.light .appbar a.etc:visited {
+  color: #000;
+}
+.appbar .charm-title {
+  font-size: 10px;
+  display: block;
+  text-align: center;
+}
+.appbar .theme-options > li {
+  display: block;
+  margin: 8px;
+  float: left;
+  line-height: 32px;
+  height: 32px;
+  width: 32px;
+}
+.appbar .theme-options > li > a,
+.appbar .theme-options > li > a:hover,
+.appbar .theme-options > li > a:visited {
+  display: block;
+  padding: 0px;
+  text-decoration: none;
+  height: 32px;
+  width: 32px;
+}
+.appbar .base-theme-options > li {
+  display: block;
+  margin: 8px;
+  float: left;
+  line-height: 32px;
+  height: 32px;
+  width: 32px;
+}
+.appbar .base-theme-options > li > a,
+.appbar .base-theme-options > li > a:hover,
+.appbar .base-theme-options > li > a:visited {
+  display: block;
+  padding: 0px;
+  text-decoration: none;
+  height: 32px;
+  width: 32px;
+}
+.appbar .base-theme-options > li > a.dark.accent {
+  background-color: #000;
+}
+/* Media queries */
+@media screen and (max-width: 1025px) {
+  /*.appbar .theme-options { width:650px; } /* ensures alignment and no wrapping on ipad */
+  /*.appbar .base-theme-options { width:140px; } /* ensures alignment and no wrapping on ipad */
+  .appbar .theme-options li,
+  .appbar .theme-options li a {
+    display: block;
+    height: 32px;
+    margin: 4px;
+    width: 32px;
+  }
+}
+@media screen and (max-width: 801px) {
+  /*.appbar .theme-options { width:360px; }*/
+}
+
+/*#source /Scripts/MetroJs/src/css/appbar.min.css */
+.appbar{font-size:.9em;height:60px;max-height:100%;padding:10px 0;width:100%}.appbar.small{height:28px}.appbar-buttons{padding:0 0 2px;width:252px}.appbar.small .appbar-buttons{width:162px}.appbar a.etc,.appbar a.etc:hover,.appbar a.etc:visited{font-size:32px;height:60px;width:90px}.appbar.small a.etc,.appbar.small a.etc:hover,.appbar.small a.etc:visited{font-size:16px;height:60px;width:90px}.appbar .theme-options{display:block;margin:0 auto;position:relative;max-width:620px;width:85%}.appbar .base-theme-options{display:block;margin:0 auto;position:relative;max-width:120px;width:30%}.appbar{background-color:#212021;bottom:0;color:#fff;left:0;line-height:normal;margin:0;overflow:hidden;position:fixed;text-align:right;z-index:100;-ms-touch-action:manipulation}.light .appbar{background-color:#dfdfdf;color:#000}.dark .appbar{background-color:#212021}.appbar .clear{clear:both}.light .appbar-buttons li a{color:#000}.appbar-buttons a>img{background-image:url('images/metroIcons-2.jpg');background-repeat:no-repeat;height:64px;width:64px;border:none}.appbar-buttons a.small>img{height:32px;width:32px}.light .appbar-buttons a>img{background-image:url('images/metroIcons_light-2.jpg')}.appbar-buttons{position:relative;margin:0 auto;text-align:right}.appbar-buttons a.search>img{background-position:-12px -12px}.appbar-buttons a.home>img{background-position:-104px -12px}.appbar-buttons a.twitter>img{background-position:-196px -12px}.appbar-buttons a.calendar>img{background-position:-288px -12px}.appbar-buttons a.storm>img{background-position:-380px -12px}.appbar-buttons a.down>img{background-position:-472px -12px}.appbar-buttons a.camera>img{background-position:-12px -99px}.appbar-buttons a.camcorder>img{background-position:-104px -99px}.appbar-buttons a.qmark>img,.appbar-buttons a.about>img{background-position:-196px -99px}.appbar-buttons a.share>img{background-position:-288px -99px}.appbar-buttons a.rain>img{background-position:-380px -99px}.appbar-buttons a.cancel>img,.appbar-buttons a.close>img{background-position:-472px -99px}.appbar-buttons a.delete>img,.appbar-buttons a.trash>img{background-position:-12px -188px}.appbar-buttons a.tag>img{background-position:-104px -188px}.appbar-buttons a.addcontact>img{background-position:-196px -188px}.appbar-buttons a.save>img{background-position:-288px -188px}.appbar-buttons a.snow>img{background-position:-380px -188px}.appbar-buttons a.msg>img{background-position:-472px -188px}.appbar-buttons a.email>img{background-position:-12px -274px}.appbar-buttons a.clock>img{background-position:-104px -274px}.appbar-buttons a.edit>img{background-position:-196px -274px}.appbar-buttons a.circle>img{background-position:-288px -274px}.appbar-buttons a.moon>img{background-position:-380px -274px}.appbar-buttons a.calc>img{background-position:-12px -362px}.appbar-buttons a.gear>img{background-position:-104px -362px}.appbar-buttons a.plus>img{background-position:-196px -362px}.appbar-buttons a.dot>img{background-position:-288px -362px}.appbar-buttons a.restart>img,.appbar-buttons a.return>img{background-position:-380px -362px}.appbar-buttons a.add>img{background-position:-472px -362px}.appbar-buttons a.phone>img{background-position:-12px -453px}.appbar-buttons a.film>img{background-position:-104px -453px}.appbar-buttons a.back>img{background-position:-196px -453px}.appbar-buttons a.car>img{background-position:-288px -453px}.appbar-buttons a.forward>img{background-position:-380px -453px}.appbar-buttons a.selectmany>img{background-position:-472px -453px}.appbar-buttons a.stop>img{background-position:-12px -538px}.appbar-buttons a.contacts>img{background-position:-104px -538px}.appbar-buttons a.select>img{background-position:-196px -538px}.appbar-buttons a.sun>img{background-position:-288px -538px}.appbar-buttons a.dpad>img{background-position:-380px -538px}.appbar-buttons a.play>img{background-position:-472px -538px}.appbar-buttons a.small.search>img{background-position:-562px -6px}.appbar-buttons a.small.home>img{background-position:-608px -6px}.appbar-buttons a.small.twitter>img{background-position:-654px -6px}.appbar-buttons a.small.calendar>img{background-position:-700px -6px}.appbar-buttons a.small.storm>img{background-position:-746px -6px}.appbar-buttons a.small.down>img{background-position:-792px -6px}.appbar-buttons a.small.camera>img{background-position:-562px -50px}.appbar-buttons a.small.camcorder>img{background-position:-608px -50px}.appbar-buttons a.small.qmark>img,.appbar-buttons a.small.about>img{background-position:-654px -50px}.appbar-buttons a.small.share>img{background-position:-700px -50px}.appbar-buttons a.small.rain>img{background-position:-746px -50px}.appbar-buttons a.small.cancel>img,.appbar-buttons a.small.close>img{background-position:-792px -50px}.appbar-buttons a.small.delete>img,.appbar-buttons a.small.trash>img{background-position:-562px -94px}.appbar-buttons a.small.tag>img{background-position:-608px -94px}.appbar-buttons a.small.addcontact>img{background-position:-654px -94px}.appbar-buttons a.small.save>img{background-position:-700px -94px}.appbar-buttons a.small.snow>img{background-position:-746px -94px}.appbar-buttons a.small.msg>img{background-position:-792px -94px}.appbar-buttons a.small.email>img{background-position:-562px -137px}.appbar-buttons a.small.clock>img{background-position:-608px -137px}.appbar-buttons a.small.edit>img{background-position:-654px -137px}.appbar-buttons a.small.circle>img{background-position:-700px -137px}.appbar-buttons a.small.moon>img{background-position:-746px -137px}.appbar-buttons a.small.calc>img{background-position:-562px -181px}.appbar-buttons a.small.gear>img{background-position:-608px -181px}.appbar-buttons a.small.plus>img{background-position:-654px -181px}.appbar-buttons a.small.dot>img{background-position:-700px -181px}.appbar-buttons a.small.restart>img,.appbar-buttons a.small.return>img{background-position:-746px -181px}.appbar-buttons a.small.add>img{background-position:-792px -181px}.appbar-buttons a.small.phone>img{background-position:-562px -226px}.appbar-buttons a.small.film>img{background-position:-608px -226px}.appbar-buttons a.small.back>img{background-position:-654px -226px}.appbar-buttons a.small.car>img{background-position:-700px -226px}.appbar-buttons a.small.forward>img{background-position:-746px -226px}.appbar-buttons a.small.selectmany>img{background-position:-792px -226px}.appbar-buttons a.small.stop>img{background-position:-562px -269px}.appbar-buttons a.small.contacts>img{background-position:-608px -269px}.appbar-buttons a.small.select>img{background-position:-654px -269px}.appbar-buttons a.small.sun>img{background-position:-700px -269px}.appbar-buttons a.small.dpad>img{background-position:-746px -269px}.appbar-buttons a.small.play>img{background-position:-792px -269px}.appbar-buttons li{display:inline;padding:0 10px;float:left;list-style:none}.appbar-buttons li a{font-weight:bold;background-color:transparent;color:#fff}.appbar-buttons li a:active,.appbar-buttons ul#menu li.selected a,.appbar-buttons .appbar-buttons li a:hover{text-decoration:none}.appbar a.etc,.appbar a.etc:hover,.appbar a.etc:visited{color:#fff;cursor:pointer;display:block;position:absolute;right:8px;text-decoration:none;top:0;z-index:100}.light .appbar a.etc,.light .appbar a.etc:hover,.light .appbar a.etc:visited{color:#000}.appbar .charm-title{font-size:10px;display:block;text-align:center}.appbar .theme-options>li{display:block;margin:8px;float:left;line-height:32px;height:32px;width:32px}.appbar .theme-options>li>a,.appbar .theme-options>li>a:hover,.appbar .theme-options>li>a:visited{display:block;padding:0;text-decoration:none;height:32px;width:32px}.appbar .base-theme-options>li{display:block;margin:8px;float:left;line-height:32px;height:32px;width:32px}.appbar .base-theme-options>li>a,.appbar .base-theme-options>li>a:hover,.appbar .base-theme-options>li>a:visited{display:block;padding:0;text-decoration:none;height:32px;width:32px}.appbar .base-theme-options>li>a.dark.accent{background-color:#000}@media screen and (max-width:1025px){.appbar .theme-options li,.appbar .theme-options li a{display:block;height:32px;margin:4px;width:32px}}@media screen and (max-width:801px){}
