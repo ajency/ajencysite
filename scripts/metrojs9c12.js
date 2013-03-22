@@ -1997,7 +1997,7 @@ jQuery.fn.metrojs.theme = {
         baseThemeCssSelector: 'body',                           // selector to place dark or light class after load or selection
         accentCssSelector: '.tiles',                            // selector to place accent color class after load or selection
         accentColor: 'blue',                                    // the default accent color. options are blue, brown, green, lime, magenta, mango, pink, purple, red, teal
-        baseTheme: 'dark',                                      // the default theme color. options are dark, light
+        baseTheme: 'light',                                      // the default theme color. options are dark, light
         accentColors: [
              'amber', 'brown', 'cobalt', 'crimson', 'cyan',
              'magenta', 'lime', 'indigo', 'green', 'emerald',
