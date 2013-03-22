@@ -829,7 +829,7 @@ width: 46.85% !important;
   .uneditable-input[class*="span"],
   .row-fluid [class*="span"] {
     display: block;
-    float: none;
+    float: left;
     width: 100%;
     margin-left: 0;
     -webkit-box-sizing: border-box;
