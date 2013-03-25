@@ -1,0 +1,201 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,height=728,initial-scale=1" />
+    <title>Ajency</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="Drew Greenwell,professional developer,Louisville,Kentucky,asp.net,MVC,ajax,jquery,javascript,MCSD">
+   <link rel="shortcut icon" href="favicon.ico">
+   <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="content/site9c12.css?v=0.9d1" type="text/css" />
+    <link rel="stylesheet" href="content/fa/assets/css/dg-font-awesome.min.css" type="text/css">
+    <!--[if IE 7]>
+    <link rel="stylesheet" href="/content/fa/assets/css/dg-font-awesome-ie7.min.css">
+    <![endif]-->
+	 <link rel="stylesheet" type="text/css" href="content/css/bootstrap.css">
+   <link rel="stylesheet" type="text/css" href="content/css/bootstrap-responsive.css">
+    <script type="text/javascript" src="scripts/bootstrap.js"></script>
+<link rel="stylesheet" href="scripts/metrojs/bundles/metrojs.min9c12.css?v=0.9d1" type="text/css" />    
+    <script type="text/javascript" src="scripts/modernizr-2.5.3.js"></script>
+<style>
+		body {
+			font-family: Lato, sans-serif;
+			line-height: 1.5;
+			background: whitesmoke;
+		}
+		h1, h2, h3, h4, h5, p, ul {
+			margin-top: 0;
+			margin-bottom: 32px;
+			margin-bottom: 2rem;
+		}
+		ul {
+			list-style:square;
+		}
+		a {
+			color: crimson;
+		}
+		header h1, header p {
+			margin-bottom: 0;
+		}
+		header p {
+			padding-bottom: 30px;
+			padding-bottom: 1.88rem;
+		}
+		header, hr {
+			border: none;
+			border-bottom: 2px solid;
+			margin-bottom: 32px;
+			margin-bottom: 2rem;
+		}
+		.reading-canvas {
+			padding: 1.6em;
+			-webkit-column-width: 25em;
+			-moz-column-width: 25em;
+			column-width: 25em;
+			-webkit-column-gap: 3rem;
+			-moz-column-gap: 3rem;
+			column-gap: 3rem;
+			max-width: none;
+			height: 90vh;
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			box-sizing: border-box;
+		}
+.reading-canvas p:last-child {
+margin-bottom:0
+}
+	</style>
+</head>
+<body class="desktop light home">
+
+	<header>
+        <div class="site-title"><a href="index.html">  <img src="images/shots/logo.png" class="full" alt="ajency" title="ajency.in" /></a></div>
+			<div class="span2 arrow_box"><span class=" scroll-left scroll_l"><img src="images/shots/arrowLeft.png"/></span><span class=" scroll-right scroll_r"><img src="images/shots/arrowRight.png"/></span></div>
+    </header>
+    <section class="main-content panorama clear-fix">
+        <div class="row-fluid">
+            <div class=" span12">
+                <div class="content-wrapper tiles blue">
+               	<div class="reading-canvas">
+		<header>
+			<h1>Responsive, horizontal multi-column layouts</h1>
+			<p>Experiment N<sup>o</sup>7</p>
+		</header>
+		<ul class="contents">
+			<li><a href="#the-problem">The problem</a></li>
+			<li><a href="#beyond-the-y-axis">Beyond the y-axis</a></li>
+			<li><a href="#finding-a-height-that-responds">Finding a height that responds</a></li>
+			<li><a href="#the-solution">The solution</a></li>
+			<li><a href="#gotchas">Any gotchas?</a></li>
+		</ul>
+		<h2 id="the-problem">The problem with responsive multiple columns</h2>
+		<p>When the multiple column syntax was first introduced, I was hopelessly optimistic about the possibilities that this new layout technique would offer us in crafting good reading experiences.</p>
+		<p>So far it has been a bit of a let down. Height is the enemy. A vertical scrollbar appearing when multiple columns are in use is an instant fail (in my opinion). That may sound a bit "anti-fold" and that it's leaning towards an argument long settled and forgotten about where layout is concerned. Users scroll. They always do. For a single column of text, users will scroll to continue reading. For multiple columns of text that breaks beyond the viewport, users will scroll to read, then scroll back to the top, then scroll down again (and repeat for the amount of columns being shown) which causes a negative reading experience.</p>
+		<h3 id="beyond-the-y-axis">Beyond the Y-Axis</h3>
+		<p>In an infinite canvas, it seems like a shame that 99.9% of the time we only make use of the y-axis. You could say "That's what people are accustomed to, why change that?" - then why change anything? Doing the same thing over and over again isn't going to push our medium forward. Asking difficult questions of the web and pushing it as a medium to uncomfortable places encourages new possibilities.</p>
+		<p>Multiple columns work better along a y-axis with a defined height. Height isn't our most reliable ally in web design, especially where text-based content is concerned. A "fixed" height can sometimes mean a premature end to a container with text longer than its constrained parent. A defined height where multiple columns are concerned causes the browser to think <strong>horizontally</strong>.</p>
+		<p>When we supply a <code>column-width</code> we don't need to specifiy a <code>column-count</code>. The browser will automatically fill the available space with columns until it doesn't need to create an extra column. This solves the problem of having to specify a width to fit our horizontal columns into. But what about the problem of fitting the columns into a window height?</p>
+		<h3 id="finding-a-height-that-responds">Finding a height that responds</h3>
+		<p>The requirement here is to find a measurement that is proportional to the screen. I immediately thought percentages although a percentage-based height simply won't work. The content will break beyond it. We could use pixels to fix the height although we would need countless media queries to change this value when the height changes. What about the <strong>vh</strong> unit? Support <a href="http://caniuse.com/viewport-units">isn't universal</a>, although suprisingly good &mdash; it is in IE9+, Firefox 19, Chrome, Safari, Safari iOS, it's even due in the next Blackberry browser! That's good to go in my book, heck - we are building a multi-column layout using native CSS columns, if we have gone this far down that road, why stop now? A positive Modernizr test for vh units would trigger the styles for this setup and then provide a suitable fallback for browsers that can't handle it.</p>
+		<h3 id="the-solution">The solution</h3>
+		<ul>
+			<li>Provide a height relative to the viewport using vh units</li>
+			<li>Specify a CSS column width which will automatically fill the space</li>
+			<li>Run a Modernizr test for vh compatibility (if browsers can't read this, then there is no point in continuing with a horizontal layout)</li>
+			<li><strong>Editorial bonus</strong> specify manual column breaks and remove when space gets tight</li>
+		</ul>
+		<h3 id="gotchas">Any gotchas?</h3>
+		<p>A tiny one that will surely be fixed by browser vendors - when resizing the viewport height, the vh unit value doesn't update - you'll need to refresh the page for it to update. <a href="http://css-tricks.com/viewport-sized-typography/">Chris Coyier</a> ran into this problem too when looking at <a href="http://css-tricks.com/viewport-sized-typography/">Viewport Sized Typography</a> and filed a bug.</p>
+<p>And one gotcha about this demo - I had to remove the Modernizr check for vh because Tumblr wasn't too happy about that script being hosted on this page. Just make sure to include it if you decide to use this approach</p>
+		<hr>
+		<p>A quick experiment by <a href="http://twitter.com/jordanmoore">Jordan Moore</a>. <a href="http://jordanm.co.uk/lab">More experiments</a>.
+	</p>
+</div>
+
+
+			   </div>
+			</div>
+		</div>
+    </section>
+	
+    <footer >
+      <div class="footerlink">Website Design by <a href="http://ajency.in/" target="_blank" title="Ajency.in">Ajency.in</a></div>
+    </footer>
+    <script src="scripts/jquery-1.7.1.min.js" type="text/javascript"></script>
+    <script src="scripts/metrojs/bundles/metrojs9c12.js?v=0.9d1" type="text/javascript"></script>
+    <script type="text/javascript">
+        var metroJs,
+            appBar;
+        // remove the default theme set for noscript and apply user theme
+        $(document).ready(function () {
+            $("body,.tiles").removeClass("dark blue");
+            metroJs = jQuery.fn.metrojs;
+            metroJs.theme.loadDefaultTheme();
+        });
+    </script>
+        
+    <script type="text/javascript" src="scripts/dg/home.index.js"></script>
+
+    <script type="text/javascript">        
+        
+        $(document).ready(function () {
+            var doBind = (typeof (window.bindAppBarKeyboard) === "undefined" || window.bindAppBarKeyboard);
+            // create the app bar
+            appBar = $(".appbar").applicationBar({
+	    	applyTheme: false, // apply theme example below
+                preloadAltBaseTheme: true, // load both sets of images so there isn't a flicker when base theme is changed
+                metroLightUrl: '/images/metroIcons_light.jpg',
+                metroDarkUrl: '/images/metroIcons.jpg',
+                bindKeyboard: doBind // bind the keyboard unless specified in an included script
+            });
+            // add the accents and base colors to the appbar
+            metroJs.theme.appendAccentColors();
+            metroJs.theme.appendBaseThemes();
+        });
+        
+
+	</script>
+    <script type="text/javascript" src="scripts/jquery.mousewheel.js"></script>
+	  <script type="text/javascript"> 
+	$(document).ready(function() {
+	$('html, body, *').mousewheel(function(e, delta) {
+		this.scrollLeft -= (delta * 10);
+		e.preventDefault();
+	});
+});
+
+
+	  </script>
+	  <script type="text/javascript">
+
+
+$(function(){
+ 
+
+ 
+    $('.scroll-right').click(function() { // bind an event handler to the click event
+        //$('.main-content').scrollLeft( $('.main-content').scrollLeft() + 100 ); // fast scroll
+        $('.main-content').animate({ // smooth scroll
+            scrollLeft: $('.main-content').scrollLeft() + 400
+        })
+        $('.log .left').text( $('.main-content').scrollLeft() );
+    });
+ 
+    $('.scroll-left').click(function() { // bind an event handler to the click event
+        //$('.main-content').scrollLeft( $('.main-content').scrollLeft() - 100 ); // fast scroll
+        $('.main-content').animate({ // smooth scroll
+            scrollLeft: $('.main-content').scrollLeft() - 400
+        })
+        $('.log .left').text( $('.main-content').scrollLeft() );
+    });
+  
+});
+</script>
+    <script type="text/javascript" src="scripts/dg/global9c12.js?v=0.9d1"></script>
+
+</body>
+
+</html>

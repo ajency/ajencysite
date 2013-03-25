@@ -83,7 +83,7 @@ h6 { font-size: 1.15em; }
 {    
     overflow:auto;
     position:relative;
-    margin:0 0 0 30px;
+    margin:0 0 0 0px;
     padding-bottom:60px;
     /* calculating the appropriate width in script*/
     width:2200px;
@@ -106,7 +106,7 @@ h6 { font-size: 1.15em; }
 .site-title
 {    
     float:left;
-    margin:0px auto 0 40px;    
+    margin:15px auto 0 40px;    
     -moz-transition:margin .3s; /* Firefox 4 */    
     -webkit-transition:margin .3s; /* Safari and Chrome */
     -o-transition:margin .3s; /* Opera */
@@ -827,8 +827,8 @@ max-height: 44px;
 overflow: hidden;
 text-align: left;
 }
-header{margin-bottom:40px;}
-
+header{margin-bottom:20px;}
+.tile_false{margin:4px !important;}
 .five-wide .span4 {
 width: 38.8% !important;
 }
