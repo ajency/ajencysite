@@ -835,20 +835,73 @@ width: 38.8% !important;
 .five-wide .span3{
 width: 18.7%!important;
 }
+.scroll_l{ opacity:0.2;}
+.scroll_r{ opacity:0.2;margin-left:20px;}
+.scroll_l:hover{ opacity:0.6;cursor:pointer;}
+.scroll_r:hover{ opacity:0.6;cursor:pointer;}
+.arrow_box{right: 0;
+position: absolute;
+margin-top: 22px;}
+.footerlink{
+right: 0;position: fixed;bottom: 0;
+background: black;
+padding: 3px;
+font-size: 11px;
+color: #fff;
+}
+.footerlink a{color: #E9BB03 !important;}
+
+/* Ajency.in mobile view*/
 @media (max-width: 767px) {
 html{overflow-y:scroll !important;}
 .tile-group {float:none !important;width:100% !important;margin:0px;}
-.content-wrapper {width:310px !important;margin: 0 0 0 15px;}
+.content-wrapper {width:310px !important;margin: auto;}
 body {
 padding-right: 0px!important;
 padding-left: 0px!important;
 min-width: 310px!important;
 }
 .site-title {
-margin: 38px auto 0 50px!important;
+width: 233px;
+margin: auto;
+float: none;
+margin-top: 24px;
 }
 .tile-group.first {
 margin-left: 0px;
 }
-
+.row-fluid [class*="span"]{ float:left!important; margin-left:5px !important;}
+.row-fluid  .span3{width:46.7% !important;}
+.two-wide .span5 {
+width: 46.7% !important;
 }
+.five-wide .span4 {
+width: 100% !important;
+}
+body .two-wide .span5 {
+width: 46.7% !important;
+}
+.arrow_box{display:none !important;}
+}
+/*Ajency.in Tab View */
+@media (min-width: 768px) and (max-width: 979px) {
+.site-title{margin-top:5px !important;}
+header{margin-bottom: 8px;}
+.row-fluid .span5 {
+width: 48.4% !important;
+margin-left: 5px!important;
+}
+.row-fluid .span3 {
+width: 23.4%!important;
+margin-left: 5px!important;
+}
+.four-wide .span12{
+width: 98.5%!important;
+margin-left: 5px!important;
+}
+.five-wide .span4{margin-left: 5px!important;}
+.five-wide .span3{width: 18.6%!important;
+margin-left: 5px!important;}
+}
+
+ 

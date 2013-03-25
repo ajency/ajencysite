@@ -22,7 +22,7 @@ var $panos = $(".panorama");
             var panoWidth = $pano.width();
             if (!metrojs.capabilities.canTouch) {
                 if (!stgs.showScroll)
-                    $pano.css({ 'overflow-x': 'hidden' });
+                    $pano.css({ 'overflow-x': 'scroll' });
                 setPanoWidth($pano, stgs);
                 $pano.bind("mousewheel.metrojs", function (event, delta) {
                     if (event.ctrlKey)

@@ -26,6 +26,7 @@
   <div class="reading-canvas">
 	<header>
         <div class="site-title"><a href="index.html">  <img src="images/shots/logo.png" class="full" alt="ajency" title="ajency.in" /></a></div>
+			<div class="span2 arrow_box"><span class=" scroll-left scroll_l"><img src="images/shots/arrowLeft.png"/></span><span class=" scroll-right scroll_r"><img src="images/shots/arrowRight.png"/></span></div>
     </header>
     <section class="main-content panorama clear-fix">
         <div class="row-fluid">
@@ -448,26 +449,8 @@
                         </div>
     </section>
 	
-    <footer class="appbar">
-        <nav>
-            <ul class="appbar-buttons" id="menu">
-                <li>
-                    <a class="home" href="index.html"><img alt="home" src="images/1pixel.gif"></a>
-                    <span class="charm-title">Home</span>
-                </li>
-                <li>
-                    <a class="about" href="about.html"><img alt="about" src="images/1pixel.gif"></a>
-                    <span class="charm-title">About</span>
-                </li>
-                <li>
-                    <a class="twitter" target="_blank" onclick="javascript:trackExternal(this);" href="http://www.twitter.com/dgreenwell"><img alt="twitter" src="images/1pixel.gif"></a>
-                    <span class="charm-title">Twitter</span>
-                </li>
-            </ul>
-        </nav>
-        <a class="etc">&bull;&bull;&bull;</a>
-        <ul class="theme-options clear"></ul>
-        <ul class="base-theme-options clear"></ul>
+    <footer >
+      <div class="footerlink">Website Design by <a href="http://ajency.in/" target="_blank" title="Ajency.in">Ajency.in</a></div>
     </footer>
     <script src="scripts/jquery-1.7.1.min.js" type="text/javascript"></script>
     <script src="scripts/metrojs/bundles/metrojs9c12.js?v=0.9d1" type="text/javascript"></script>
@@ -503,7 +486,42 @@
         
 
 	</script>
-    <script type="text/javascript" src="scripts/jquery.mousewheel.min.js"></script>
+    <script type="text/javascript" src="scripts/jquery.mousewheel.js"></script>
+	  <script type="text/javascript"> 
+	$(document).ready(function() {
+	$('html, body, *').mousewheel(function(e, delta) {
+		this.scrollLeft -= (delta * 10);
+		e.preventDefault();
+	});
+});
+
+
+	  </script>
+	  <script type="text/javascript">
+
+
+$(function(){
+ 
+
+ 
+    $('.scroll-right').click(function() { // bind an event handler to the click event
+        //$('.main-content').scrollLeft( $('.main-content').scrollLeft() + 100 ); // fast scroll
+        $('.main-content').animate({ // smooth scroll
+            scrollLeft: $('.main-content').scrollLeft() + 400
+        })
+        $('.log .left').text( $('.main-content').scrollLeft() );
+    });
+ 
+    $('.scroll-left').click(function() { // bind an event handler to the click event
+        //$('.main-content').scrollLeft( $('.main-content').scrollLeft() - 100 ); // fast scroll
+        $('.main-content').animate({ // smooth scroll
+            scrollLeft: $('.main-content').scrollLeft() - 400
+        })
+        $('.log .left').text( $('.main-content').scrollLeft() );
+    });
+  
+});
+</script>
     <script type="text/javascript" src="scripts/dg/global9c12.js?v=0.9d1"></script>
 	</div>
 </body>
