@@ -521,6 +521,20 @@ $(function(){
     });
   
 });
+jQuery(document).keydown(function(e){
+    if (e.keyCode == 37) { 
+        $('.main-content').animate({ // smooth scroll
+            scrollLeft: $('.main-content').scrollLeft() - 400
+        })
+        $('.log .left').text( $('.main-content').scrollLeft() );
+    }
+	if (e.keyCode == 39) { 
+         $('.main-content').animate({ // smooth scroll
+            scrollLeft: $('.main-content').scrollLeft() + 400
+        })
+        $('.log .left').text( $('.main-content').scrollLeft() );
+    }
+});
 </script>
     <script type="text/javascript" src="scripts/dg/global9c12.js?v=0.9d1"></script>
 	</div>

@@ -841,6 +841,7 @@ width: 18.7%!important;
 .scroll_r:hover{ opacity:0.6;cursor:pointer;}
 .arrow_box{right: 0;
 position: absolute;
+width: 103px !important;
 margin-top: 22px;}
 .footerlink{
 right: 0;position: fixed;bottom: 0;
