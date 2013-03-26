@@ -20,7 +20,11 @@
     <script type="text/javascript" src="scripts/bootstrap.js"></script>
 <link rel="stylesheet" href="scripts/metrojs/bundles/metrojs.min9c12.css?v=0.9d1" type="text/css" />    
     <script type="text/javascript" src="scripts/modernizr-2.5.3.js"></script>
-
+	
+	<style type="text/css">
+	.yellow .accent, .yellow .live-tile > div, .yellow .copy-tile > div, .yellow .live-tile > .face, .yellow .copy-tile > .face, .yellow .live-tile > .slide, .yellow .live-tile > .flip-back, .yellow .live-tile > .flip-front, .yellow .live-tile > .slide-back, .yellow .live-tile > .slide-front, .yellow .list-tile > div, .yellow .flip-list > li > div {
+    background-color: #F0C60A;
+	</style>
 </head>
 <body class="desktop light home">
   <div class="reading-canvas">
@@ -31,7 +35,7 @@
     <section class="main-content panorama clear-fix">
         <div class="row-fluid">
             <div class=" span12">
-                <div class="content-wrapper tiles blue">
+                <div class="content-wrapper tiles yellow">
                     <section class="tile-group five-wide">
                         <h2>Sites</h2>
                        
@@ -40,7 +44,7 @@
                                 <img src="images/shots/mainstay.jpg" title="CSS 3" class="full" alt="Mainstay Insurance" /></a>
                             </div>
 							<!--<div>
-							<p>Maisntay Insurance is an insurance brokerage firm in Toronto. Dave, the man behind it, is a sailing enthusiast. His only response to the site design was "I've been smiling to myself all day!"</p>
+							<p>Mainstay Insurance is an insurance brokerage firm in Toronto. Dave, the man behind it, is a sailing enthusiast. His only response to the site design was "I've been smiling to myself all day!"</p>
 							<span class="tile-title">www.mainstayinsurance.ca</span>
 							</div>-->
 						</div>
@@ -66,11 +70,11 @@
                                 <img src="images/shots/mix.jpg" alt="projects" class="full head" />
                             </div>
 							<!--<div>
-							<p>In black, white and red, the MiX site talks about it's fantastic food and fun ambience.</p>
+							<p>In black, white and red, the MiX site stands for it's fantastic food and fun ambience.</p>
 							<span class="tile-title">www.barmix.in</span>
 							</div>-->
                         </div>
-                        <div class="span3 live-tile" >
+                        <div class="span3 live-tile exclude" >
                             <div>
                                 <img src="images/shots/vok.jpg" alt="projects" class="full head" />
                             </div>
@@ -81,7 +85,7 @@
                         </div>
 					
 					
-                        <div class="span4 live-tile" >
+                        <div class="span4 live-tile exclude" >
                             <div>
                                 <img src="images/shots/kodacon.jpg" alt="projects" class="full head" />
                             </div>
@@ -99,23 +103,23 @@
 							<span class="tile-title">www.flyboy.in</span>
 							</div>
                         </div>-->
-						<div class="span3 live-tile" >
+						<div class="span3 live-tile exclude" >
                             <div>
                                 <img src="images/shots/thor.jpg" alt="projects" class="full head" />
                             </div>
                         </div>
 						
-                        <div class="span4 live-tile" data-delay="6000" data-pause-onhover="true" data-bounce="true" data-direction="backward">
+                        <div class="span4 live-tile exclude" data-delay="6000" data-pause-onhover="true" data-bounce="true" data-direction="backward">
                             <div>
                                 <img src="images/shots/de.jpg" title="CSS 3" class="full" alt="Dimension Engineers" />
                             </div>
-                            <!--<div>
+                           <!-- <div>
                                 <p>Dimension Engineers is a manufacturing unit in Pune. The site was redesigned keeping in mind the company's plans to expand and cater to international clientele.   </p>
 								<span class="tile-title">www.dimensionengineers.com</span>
                             </div>-->
 						</div>
 						
-                        <div class="span4 live-tile" data-delay="6000" data-mode="flip" data-bounce="true" data-direction="horizontal">
+                        <div class="span4 live-tile exclude" data-delay="6000" data-mode="flip" data-bounce="true" data-direction="horizontal">
                             <div>
                                 <img src="images/shots/hit95.jpg" title="CSS 3" class="full" alt="css 3" />
                             </div>
@@ -124,31 +128,63 @@
 							<span class="tile-title">www.hit95fm.in</span>
 							</div>-->
                         </div>
-						<div class="span3 live-tile" >
+						<div class="span3 live-tile exclude" >
                             <div>
                                 <img src="images/shots/lokus1.jpg" alt="projects" class="full head" />
                             </div>
                         </div>
 						
                     </section>
-                    <section class="tile-group two-wide">
+                    <section class="tile-group four-wide">
                         <h2>Mobile Apps</h2>
-                        <div class="span12 live-tile two-tall" style="background:#ccc">
-                        </div>
-                        <div class="span12 live-tile" data-delay="6000" data-mode="flip" data-bounce="true" data-direction="horizontal">
+                        <div class="live-tile exclude two-wide two-tall float-right" style="background:#f0c60a;">
+							<div>
+							<h2>Cross-platform apps</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam quis mi ac orci hendrerit tincidunt. Donec sit amet nulla sed mi dapibus ultricies eu sit amet leo. Ut vel mollis nunc. Ut nec enim massa. </p>
+							
+							</div>
+						</div>	
+						
+                        <div class="span5 live-tile exclude" data-delay="6000" data-mode="flip" data-bounce="true" data-direction="horizontal">
                             <div>
-                                <img src="images/shots/mainstaylogo.png" title="CSS 3" class="full" alt="css 3" />
+                                <img src="images/shots/intellidocs.jpg" title="CSS 3" class="full" alt="css 3" />
                             </div>
-                            <div>
-                                <img src="images/shots/mainstay.jpg" title="CSS 3" class="full" alt="css 3" />
+						</div>
+						<div class="span5 live-tile exclude" style="background:#ccc">	
+							<div>
+								<img src="images/shots/printzi.jpg" title="CSS 3" class="full" alt="css 3" />
                             </div>
                         </div>
+						
+						<div class="span3 live-tile exclude" data-delay="6000" data-mode="flip" data-bounce="true" data-direction="horizontal">						
+                            <div>
+                               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam quis mi ac orci hendrerit tincidunt.</p>
+                            </div>
+                        </div>
+						<div class="tile-strip one-tile">
+                            <div data-bounce="true" data-mode="none" class="live-tile half-tile prev none bounce" style="cursor: pointer;">
+                                <div><img src="images/shots/android.jpg"></div>
+                            </div>
+                            <div data-bounce="true" data-mode="none" class="live-tile half-tile next none bounce" style="cursor: pointer;">
+                                <div><img src="images/shots/ios.jpg"></div>
+                            </div>
+                            <div data-bounce="true" data-mode="none" class="live-tile half-tile info accent none bounce" style="cursor: pointer;"><span class="bottom metroLarge">more<br>info</span></div>
+                            <div data-bounce="true" data-mode="none" class="live-tile half-tile theme none bounce" style="cursor: pointer;">
+                                <div><img class="full" alt="Painters Pallete - Theming Metro JS" src="images/projects/metro-js-theming_small.png"></div>
+                            </div>
+                        </div>
+						<div class="span5 live-tile exclude" data-delay="6000" data-mode="flip" data-bounce="true" data-direction="horizontal">						
+                            <div>
+                                <img src="images/shots/bekumo.jpg" title="CSS 3" class="full" alt="css 3" />
+                            </div>
+                        </div>
+						
                     </section>
                     <section class="tile-group four-wide">
                         <h2>community sites</h2>
                         <div class="span5 live-tile two-tall" style="background:#ccc">
                         </div>
-                        <div class="span5 live-tile" data-delay="6000" data-mode="flip" data-bounce="true" data-direction="horizontal">
+                        <div class="span5 live-tile exclude" data-delay="6000" data-mode="flip" data-bounce="true" data-direction="horizontal">
                             <div>
                                 <img src="images/shots/mainstaylogo.png" title="CSS 3" class="full" alt="css 3" />
                             </div>
@@ -156,7 +192,7 @@
                                 <img src="images/shots/mainstay.jpg" title="CSS 3" class="full" alt="css 3" />
                             </div>
                         </div>
-                        <div class="span5 live-tile" data-delay="6000" data-mode="flip" data-bounce="true" data-direction="horizontal">
+                        <div class="span5 live-tile exclude" data-delay="6000" data-mode="flip" data-bounce="true" data-direction="horizontal">
                             <div>
                                 <img src="images/shots/mainstaylogo.png" title="CSS 3" class="full" alt="css 3" />
                             </div>
@@ -164,7 +200,7 @@
                                 <img src="images/shots/mainstay.jpg" title="CSS 3" class="full" alt="css 3" />
                             </div>
                         </div>
-                        <div class="span5 live-tile" data-delay="6000" data-mode="flip" data-bounce="true" data-direction="horizontal">
+                        <div class="span5 live-tile exclude" data-delay="6000" data-mode="flip" data-bounce="true" data-direction="horizontal">
                             <div>
                                 <img src="images/shots/mainstaylogo.png" title="CSS 3" class="full" alt="css 3" />
                             </div>
@@ -172,7 +208,7 @@
                                 <img src="images/shots/mainstay.jpg" title="CSS 3" class="full" alt="css 3" />
                             </div>
                         </div>
-                        <div class="span5 live-tile" data-delay="6000" data-mode="flip" data-bounce="true" data-direction="horizontal">
+                        <div class="span5 live-tile exclude" data-delay="6000" data-mode="flip" data-bounce="true" data-direction="horizontal">
                             <div>
                                 <img src="images/shots/mainstaylogo.png" title="CSS 3" class="full" alt="css 3" />
                             </div>
@@ -183,7 +219,7 @@
                     </section>
                     <section class="tile-group four-wide">
                         <h2>About Us</h2>
-                        <div class="span5 live-tile" data-delay="6000" data-mode="flip" data-bounce="true" data-direction="horizontal">
+                        <div class="span5 live-tile exclude" data-delay="6000" data-mode="flip" data-bounce="true" data-direction="horizontal">
                             <div>
                                 <img src="images/shots/mainstaylogo.png" title="CSS 3" class="full" alt="css 3" />
                             </div>
@@ -191,7 +227,7 @@
                                 <img src="images/shots/mainstay.jpg" title="CSS 3" class="full" alt="css 3" />
                             </div>
                         </div>
-                        <div class="span5 live-tile" data-delay="6000" data-mode="flip" data-bounce="true" data-direction="horizontal">
+                        <div class="span5 live-tile exclude" data-delay="6000" data-mode="flip" data-bounce="true" data-direction="horizontal">
                             <div>
                                 <img src="images/shots/mainstaylogo.png" title="CSS 3" class="full" alt="css 3" />
                             </div>
@@ -204,7 +240,7 @@
                     </section>
                     <section class="tile-group four-wide">
                         <h2>Team</h2>
-                        <div class="span5 live-tile" data-delay="6000" data-mode="flip" data-bounce="true" data-direction="horizontal">
+                        <div class="span5 live-tile exclude" data-delay="6000" data-mode="flip" data-bounce="true" data-direction="horizontal">
                             <div>
                                 <img src="images/shots/mainstaylogo.png" title="CSS 3" class="full" alt="css 3" />
                             </div>
@@ -212,7 +248,7 @@
                                 <img src="images/shots/mainstay.jpg" title="CSS 3" class="full" alt="css 3" />
                             </div>
                         </div>
-                        <div class="span5 live-tile" data-delay="6000" data-mode="flip" data-bounce="true" data-direction="horizontal">
+                        <div class="span5 live-tile exclude" data-delay="6000" data-mode="flip" data-bounce="true" data-direction="horizontal">
                             <div>
                                 <img src="images/shots/mainstaylogo.png" title="CSS 3" class="full" alt="css 3" />
                             </div>
@@ -220,7 +256,7 @@
                                 <img src="images/shots/mainstay.jpg" title="CSS 3" class="full" alt="css 3" />
                             </div>
                         </div>
-                        <div class="span5 live-tile" data-delay="6000" data-mode="flip" data-bounce="true" data-direction="horizontal">
+                        <div class="span5 live-tile exclude" data-delay="6000" data-mode="flip" data-bounce="true" data-direction="horizontal">
                             <div>
                                 <img src="images/shots/mainstaylogo.png" title="CSS 3" class="full" alt="css 3" />
                             </div>
@@ -228,7 +264,7 @@
                                 <img src="images/shots/mainstay.jpg" title="CSS 3" class="full" alt="css 3" />
                             </div>
                         </div>
-                        <div class="span5 live-tile" data-delay="6000" data-mode="flip" data-bounce="true" data-direction="horizontal">
+                        <div class="span5 live-tile exclude" data-delay="6000" data-mode="flip" data-bounce="true" data-direction="horizontal">
                             <div>
                                 <img src="images/shots/mainstaylogo.png" title="CSS 3" class="full" alt="css 3" />
                             </div>
@@ -236,22 +272,22 @@
                                 <img src="images/shots/mainstay.jpg" title="CSS 3" class="full" alt="css 3" />
                             </div>
                         </div>
-                        <div class="span3 live-tile" >
+                        <div class="span3 live-tile exclude" >
                             <div>
                                 <img src="images/shots/iconsultus.jpg" alt="projects" class="full head" />
                             </div>
                         </div>
-                        <div class="span3 live-tile" >
+                        <div class="span3 live-tile exclude" >
                             <div>
                                 <img src="images/shots/iconsultus.jpg" alt="projects" class="full head" />
                             </div>
                         </div>
-                        <div class="span3 live-tile" >
+                        <div class="span3 live-tile exclude" >
                             <div>
                                 <img src="images/shots/iconsultus.jpg" alt="projects" class="full head" />
                             </div>
                         </div>
-                        <div class="span3 live-tile" >
+                        <div class="span3 live-tile exclude" >
                             <div>
                                 <img src="images/shots/iconsultus.jpg" alt="projects" class="full head" />
                             </div>
@@ -270,8 +306,8 @@
                             </div>
                             <div class="accent blue" data-direction="vertical">
                                 <p>
-                                    <a href="projects/metrojs.html">Metro JS</a> is a JavaScript plugin for jQuery developed to easily enable hardware accelerated <a href="http://en.wikipedia.org/wiki/Metro_Design_Language" target="_blank" onclick="javascript:trackExternal(this);">Metro</a> interfaces on the web. 	                       
-                                    <span class="compat"><a href="projects/metrojs.html">Metro JS</a> is compatibile with:</span>
+                                    <a href="#">Metro JS</a> is a JavaScript plugin for jQuery developed to easily enable hardware accelerated <a href="#" target="_blank" onclick="javascript:trackExternal(this);">Metro</a> interfaces on the web. 	                       
+                                    <span class="compat"><a href="#">Metro JS</a> is compatibile with:</span>
                                 </p>
                                 <ul class="copy-list tight">
                                     <li>IE7+ Windows / Windows Phone</li>
@@ -353,27 +389,27 @@
                     </section>
                     <section class="tile-group two-wide">
                         <h2>Follow Us</h2>
-                        <div class="span5 live-tile" >
+                        <div class="span5 live-tile exclude" >
                             <div>
                                 <img src="images/shots/iconsultus.jpg" alt="projects" class="full head" />
                             </div>
                         </div>
-                        <div class="span5 live-tile" >
+                        <div class="span5 live-tile exclude" >
                             <div>
                                 <img src="images/shots/iconsultus.jpg" alt="projects" class="full head" />
                             </div>
                         </div>
-                        <div class="span5 live-tile" >
+                        <div class="span5 live-tile exclude" >
                             <div>
                                 <img src="images/shots/iconsultus.jpg" alt="projects" class="full head" />
                             </div>
                         </div>
-                        <div class="span5 live-tile" >
+                        <div class="span5 live-tile exclude" >
                             <div>
                                 <img src="images/shots/iconsultus.jpg" alt="projects" class="full head" />
                             </div>
                         </div>
-                        <div class="span5 live-tile" >
+                        <div class="span5 live-tile exclude" >
                             <div>
                                 <img src="images/shots/iconsultus.jpg" alt="projects" class="full head" />
                             </div>
@@ -381,7 +417,7 @@
                     </section>
 					<section class="tile-group five-wide ">
 					<h2>Extra</h2>
-                       <div class="span4 live-tile" data-delay="6000" data-mode="flip" data-bounce="true" data-direction="horizontal">
+                       <div class="span4 live-tile exclude" data-delay="6000" data-mode="flip" data-bounce="true" data-direction="horizontal">
                             <div>
                                 <img src="images/shots/mainstaylogo.png" title="CSS 3" class="full" alt="css 3" />
                             </div>
@@ -389,7 +425,7 @@
                                 <img src="images/shots/mainstay.jpg" title="CSS 3" class="full" alt="css 3" />
                             </div>
                         </div>
-                        <div class="span4 live-tile" data-pause-onhover="true" data-bounce="true" >
+                        <div class="span4 live-tile exclude" data-pause-onhover="true" data-bounce="true" >
                             <div>
                                 <img class="full" src="images/shots/a1b.jpg" alt="Accessonebillion" />
                             </div>
@@ -398,12 +434,12 @@
                                 <span class="tile-title">accessonebillion.com</span>
                             </div>
                         </div>
-					   <div class="span3 live-tile" >
+					   <div class="span3 live-tile exclude" >
                             <div>
                                 <img src="images/shots/iconsultus.jpg" alt="projects" class="full head" />
                             </div>
                         </div>
-					   <div class="span4 live-tile" data-delay="6000" data-mode="flip" data-bounce="true" data-direction="horizontal">
+					   <div class="span4 live-tile exclude" data-delay="6000" data-mode="flip" data-bounce="true" data-direction="horizontal">
                             <div>
                                 <img src="images/shots/mainstaylogo.png" title="CSS 3" class="full" alt="css 3" />
                             </div>
@@ -411,7 +447,7 @@
                                 <img src="images/shots/mainstay.jpg" title="CSS 3" class="full" alt="css 3" />
                             </div>
                         </div>
-                        <div class="span4 live-tile" data-pause-onhover="true" data-bounce="true" >
+                        <div class="span4 live-tile exclude" data-pause-onhover="true" data-bounce="true" >
                             <div>
                                 <img class="full" src="images/shots/a1b.jpg" alt="Accessonebillion" />
                             </div>
@@ -420,12 +456,12 @@
                                 <span class="tile-title">accessonebillion.com</span>
                             </div>
                         </div>
-					   <div class="span3 live-tile" >
+					   <div class="span3 live-tile exclude" >
                             <div>
                                 <img src="images/shots/iconsultus.jpg" alt="projects" class="full head" />
                             </div>
                         </div>
-						 <div class="span4 live-tile" data-delay="6000" data-mode="flip" data-bounce="true" data-direction="horizontal">
+						 <div class="span4 live-tile exclude" data-delay="6000" data-mode="flip" data-bounce="true" data-direction="horizontal">
                             <div>
                                 <img src="images/shots/mainstaylogo.png" title="CSS 3" class="full" alt="css 3" />
                             </div>
@@ -433,7 +469,7 @@
                                 <img src="images/shots/mainstay.jpg" title="CSS 3" class="full" alt="css 3" />
                             </div>
                         </div>
-                        <div class="span4 live-tile" data-pause-onhover="true" data-bounce="true" >
+                        <div class="span4 live-tile exclude" data-pause-onhover="true" data-bounce="true" >
                             <div>
                                 <img class="full" src="images/shots/a1b.jpg" alt="Accessonebillion" />
                             </div>
@@ -442,7 +478,7 @@
                                 <span class="tile-title">accessonebillion.com</span>
                             </div>
                         </div>
-					   <div class="span3 live-tile" >
+					   <div class="span3 live-tile exclude" >
                             <div>
                                 <img src="images/shots/iconsultus.jpg" alt="projects" class="full head" />
                             </div>
