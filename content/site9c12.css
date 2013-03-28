@@ -18,7 +18,28 @@ abbr,acronym { border:0; }
 /* End Reset*/
 
 /* Begin Site Theme */
-header {  position:relative; overflow-x:hidden; overflow-y:auto; }
+header {  position:relative;margin-bottom: 85px!important;padding-bottom: 47px; }
+.menubar{position: absolute !important;
+margin-left: 324px;
+margin-top: 51px;
+font-size: 18px;
+color: #A5A1A1;
+z-index: 999;}
+.menubar .caret{
+display:inline !important;
+border:0px !important;
+margin-left:8px !important;
+opacity:0.3;
+}
+.menubar .dropdown-menu{
+font-size:13px;
+}
+.menubar .caret:hover{
+display:inline !important;
+border:0px !important;
+margin-left:8px !important;
+opacity:0.9;
+}
 .appbar{display:none;}
 body {
     background-color: #000;    
@@ -106,7 +127,7 @@ h6 { font-size: 1.15em; }
 .site-title
 {    
     float:left;
-    margin:15px auto 0 40px;    
+    margin:23px auto 0 40px;    
     -moz-transition:margin .3s; /* Firefox 4 */    
     -webkit-transition:margin .3s; /* Safari and Chrome */
     -o-transition:margin .3s; /* Opera */
@@ -842,7 +863,7 @@ width: 18.7%!important;
 .arrow_box{right: 0;
 position: absolute;
 width: 103px !important;
-margin-top: 22px;}
+margin-top: 33px;}
 .footerlink{
 right: 0;position: fixed;bottom: 0;
 background: black;
@@ -905,4 +926,146 @@ margin-left: 5px!important;
 margin-left: 5px!important;}
 }
 
+/*custom css */
+	.reading-canvas {
+		margin-left: 14px;
+			padding: 1.6em;
+			-webkit-column-width: 38em;
+			-moz-column-width:38em;
+			column-width: 38em;
+			-webkit-column-gap: 3rem;
+			-moz-column-gap: 3rem;
+			column-gap: 3rem;
+			max-width: none;
+			height: 85vh;
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			box-sizing: border-box;
+		
+		}
+		
+.reading-canvas p:last-child {
+margin-bottom:0
+}
+		
+.cplm { 
+  max-height: 5em;
+  overflow: visible;
+}
+.ajc_header{
+font-weight: 300 !important;
+color: #603C3C;
+font-size: 46px;
+line-height: 48px;
+border-left: 8px solid #FCD50B;
+padding: 10px;
+}
+.ajc_sm_header{
+font-weight: 500 !important;
+color: #603C3C;
+font-size: 30px;
+line-height: 47px;
+}
+.ajc_desc{
+font-size: 21px;
+line-height: 33px;
+letter-spacing: 1px;
+color: #646464;
+
+}
+
+.rightbox {
+    position: relative;
+    display:inline-block;
+    overflow:hidden;
+    width:0;
+    height:100%;
+    vertical-align:top;
+	background:#000;
+	z-index:999;
+	
+}
+#sidePanel{
+   width: 245px;
+position: fixed;
+right: -100px;
+top: 0;
+height: 100%;
+z-index: 9999
+}
+#panelHandle{
+   
+height: 100%;
+width: 40px;
+border-radius: 0 5px 5px 0;
+float: right;
+cursor: pointer;
+z-index: 999;
+}
+#panelContent{
+    float:right;
+	padding-top: 130px;
+    width:100px;
+    height:100%;
+    background-color:#000;
+}
+
+#panelHandle p {
+    -moz-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    color: #FFFFFF;
+    font-size: 24px;
+    font-weight: bold;
+    right: -4px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: 26px;
+}
+#Details{background:#000; padding:10px; position:absolute; z-index:999; width:250px; height:100px;color:#fff;margin:20px; bottom:0;
+
+}
+.divOne{padding:15px;margin-bottom:20px}
  
+.project_1{background:url(../images/sprite.png)no-repeat;
+width:75px;height:75px;
+background-position:0 0px;
+} 
+.project_1:hover{background:url(../images/sprite.png)no-repeat;
+width:75px;height:75px;
+background-position:-75px 0px;
+cursor:pointer;
+} 
+.download_me{background:url(../images/sprite.png)no-repeat;
+width:75px;height:75px;
+background-position:0 -104px;
+} 
+.download_me:hover{background:url(../images/sprite.png)no-repeat;
+width:75px;height:75px;
+background-position:-70px -104px;
+cursor:pointer;
+} 
+.service_me{background:url(../images/sprite.png)no-repeat;
+width:75px;height:75px;
+background-position:0 -215px;
+} 
+.service_me:hover{background:url(../images/sprite.png)no-repeat;
+width:75px;height:75px;
+background-position:-74px -215px;
+cursor:pointer;
+} 
+.search_me{background:url(../images/sprite.png)no-repeat;
+width:75px;height:75px;
+background-position:0 -303px;
+} 
+.search_me:hover{background:url(../images/sprite.png)no-repeat;
+width:75px;height:75px;
+background-position:-72px -303px;
+cursor:pointer;
+}
+@media screen and (height: 1200px) {
+ .five-wide{
+ width: 940px !important;
+ 
+ }
+ }

@@ -17,7 +17,7 @@
     <![endif]-->
 	 <link rel="stylesheet" type="text/css" href="content/css/bootstrap.css">
    <link rel="stylesheet" type="text/css" href="content/css/bootstrap-responsive.css">
-    <script type="text/javascript" src="scripts/bootstrap.js"></script>
+
 <link rel="stylesheet" href="scripts/metrojs/bundles/metrojs.min9c12.css?v=0.9d1" type="text/css" />    
     <script type="text/javascript" src="scripts/modernizr-2.5.3.js"></script>
 	
@@ -27,10 +27,21 @@
 	</style>
 </head>
 <body class="desktop light home">
-  <div class="reading-canvas">
+ 
 	<header>
         <div class="site-title"><a href="index.html">  <img src="images/shots/logo.png" class="full" alt="ajency" title="ajency.in" /></a></div>
-			<div class="span2 arrow_box"><span class=" scroll-left scroll_l"><img src="images/shots/arrowLeft.png"/></span><span class=" scroll-right scroll_r"><img src="images/shots/arrowRight.png"/></span></div>
+			 <div class="dropdown menubar">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Jump To <b class="caret"><img src="images/shots/arrowdown.png"  alt="ajency" title="ajency.in" /></b></a>
+				<ul class="dropdown-menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Separated link</a></li>
+                </ul>
+              </div>
+			<div class="span2 arrow_box">
+			<span class=" scroll-left scroll_l"><img src="images/shots/arrowLeft.png"/></span><span class=" scroll-right scroll_r"><img src="images/shots/arrowRight.png"/></span></div>
     </header>
     <section class="main-content panorama clear-fix">
         <div class="row-fluid">
@@ -573,7 +584,7 @@ jQuery(document).keydown(function(e){
 });
 </script>
     <script type="text/javascript" src="scripts/dg/global9c12.js?v=0.9d1"></script>
-	</div>
+    <script type="text/javascript" src="scripts/bootstrap.js"></script>
 </body>
 
 </html>
