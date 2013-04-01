@@ -21,16 +21,7 @@
 <link rel="stylesheet" href="scripts/metrojs/bundles/metrojs.min9c12.css?v=0.9d1" type="text/css" />    
     <script type="text/javascript" src="scripts/modernizr-2.5.3.js"></script>
 <style>
-		body {
-			font-family: Lato, sans-serif;
-			line-height: 1.5;
-			background: whitesmoke;
-		}
-		h1, h2, h3, h4, h5, p, ul {
-			margin-top: 0;
-			margin-bottom: 32px;
-			margin-bottom: 2rem;
-		}
+		
 		ul {
 			list-style:square;
 		}
@@ -59,7 +50,8 @@
 			-webkit-box-sizing: border-box;
 			-moz-box-sizing: border-box;
 			box-sizing: border-box;
-		
+		padding-bottom: 26px;
+
 		}
 		
 .reading-canvas p:last-child {
@@ -99,9 +91,37 @@ margin-bottom:10px;
 <body class="desktop light home">
 
 	<header>
-        <div class="site-title"><a href="index.html">  <img src="images/shots/logo.png" class="full" alt="ajency" title="ajency.in" /></a></div>
+        <div class="site-title"><a href="index.html">  
+		<img src="images/shots/logo.png" class="full" alt="ajency" title="ajency.in" /></a>
+		</div>
+		<div class="dropdown menubar">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Jump To <b class="caret"><img src="images/shots/arrowdown.png"  alt="ajency" title="ajency.in" /></b></a>
+				<ul class="dropdown-menu">
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#">Services</a></li>
+				  <li><a href="#">Portfolio</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Contact us</a></li>
+                </ul>
+              </div>
 			<div class="span2 arrow_box"><span class=" scroll-left scroll_l"><img src="images/shots/arrowLeft.png"/></span><span class=" scroll-right scroll_r"><img src="images/shots/arrowRight.png"/></span></div>
     </header>
+	<div id = "Details" style="display: none;">
+
+A vertical scrollbar appearing when multiple columns are in use is an instant fail 
+</div>
+
+<div id="sidePanel">
+        <div id="panelContent">
+        <div class="divOne"><div class="project_1"></div></div>
+		 <div class="divOne"><div class="download_me"></div></div>
+		  <div class="divOne"><div class="service_me"></div></div>
+		   <div class="divOne"><div class="search_me"></div></div>
+        </div>
+        <div id="panelHandle"></div>
+        
+      </div>
     <section class="main-content panorama clear-fix">
         <div class="row-fluid">
             <div class=" span12">
@@ -212,9 +232,41 @@ jQuery(document).keydown(function(e){
         $('.log .left').text( $('.main-content').scrollLeft() );
     }
 });
+jQuery(function($) {
+$('.divOne').hover(function() { 
+  
+	 $('#Details').fadeIn("slow");
+}, function() { 
+    $('#Details').hide(); 
+});
+});
+</script>
+<script type="text/javascript">
+jQuery(function($) {
+    $(document).ready(function() {
+        $('#panelHandle').hover(function() {
+            $('#sidePanel').stop(true, false).animate({
+                'right': '0px'
+            }, 400);
+        }, function() {
+            jQuery.noConflict();
+        });
+
+        jQuery('#sidePanel').hover(function() {
+            // Do nothing
+        }, function() {
+
+            jQuery.noConflict();
+            jQuery('#sidePanel').animate({
+                right: '-100px'
+            }, 400);
+
+        });
+    });
+});
 </script>
     <script type="text/javascript" src="scripts/dg/global9c12.js?v=0.9d1"></script>
-
+<script type="text/javascript" src="scripts/bootstrap.js"></script>
 </body>
 
 </html>
