@@ -105,7 +105,7 @@ h6 { font-size: 1.15em; }
     overflow:auto;
     position:relative;
     margin:0 0 0 0px;
-    padding-bottom:60px;
+    padding-bottom:40px;
     /* calculating the appropriate width in script*/
     width:2200px;
 }
@@ -213,7 +213,8 @@ i.icon {
     margin: 0.2em;
     text-align: center;
 }
-
+a{text-decoration: none !important;}
+a:hover{ text-decoration: none !important;opacity:0.3;}
 .tile-group
 {
     float:left;    
@@ -230,7 +231,7 @@ i.icon {
  
 .tile-group h2
 {
-    margin:0 0 0 5px;
+    margin:0 0 0 0px;
 }
 
 .skills div.flip-back img
