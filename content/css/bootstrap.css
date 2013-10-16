@@ -345,7 +345,7 @@ a:hover {
   float: left;
   width: 100%;
   min-height: 30px;
-  margin-left: 2.127659574468085%;
+margin-left: 8px;
   *margin-left: 2.074468085106383%;
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
@@ -2151,7 +2151,7 @@ table th[class*="span"],
   *margin-right: .3em;
   line-height: 14px;
   vertical-align: text-top;
-  background-image: url("../../images/glyphicons-halflings.png");
+/*  background-image: url("../../images/glyphicons-halflings.png");*/
   background-position: 14px 14px;
   background-repeat: no-repeat;
 }

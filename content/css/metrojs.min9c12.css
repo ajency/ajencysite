@@ -1,9 +1,15 @@
 ﻿.live-tile, .list-tile, .copy-tile, .tile-strip .flip-list>li {
-    height: 150px;
+    height: 24vh;
     margin: 5px;
     padding: 0;
     width: 150px;
 }
+img.full, a.full, .live-tile .full, .list-tile .full {
+    display: block;
+    margin: 0;
+    height: 24vh;
+    text-decoration: none;
+    width: 100%}
 .live-tile.half-tile, .list-tile.half-tile, .copy-tile.half-tile, .tile-strip .flip-list>li.half-tile {
     height: 70px;
     width: 70px;
