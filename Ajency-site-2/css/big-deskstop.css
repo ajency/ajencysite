@@ -25,9 +25,30 @@ a:hover {
     font-family: 'Source Sans Pro', sans-serif !important;
     margin: 0px;
   }
+    body .blog{
+  -webkit-column-width: 24em;
+-moz-column-width: 24em;
+column-width: 24em;
+-webkit-column-gap: 5rem;
+-moz-column-gap: 5rem;
+column-gap: 5em;
+}
   .brown {
     background: #603913 !important;
   }
+  .category-box .post-item-avatar b {
+	margin-top:10px;
+  }
+  .category-box {
+margin-bottom: 35px;
+}
+  .category-box .excerpt {
+font-weight: 400;
+margin: -4px 0 3px 
+}
+.category-box .tags{
+	margin-top:25px;
+}
   .yellow {
     background: #f0c60a !important;
   }
@@ -38,6 +59,9 @@ a:hover {
     display: block;
     color: #000;
   }
+    body .blog{
+	
+	}
   .is-reponsive {
     height: 100%;
   }
@@ -48,44 +72,44 @@ a:hover {
     float: left!important;
   }
   .full-container {
-    left: 6%;
-    bottom: 9%;
-    top: 9%;
+    left: 4%;
+    bottom: 11%;
+    top: 11%;
     right: 0;
     position: absolute;
-    width: 4500px;
+    width: 4830px;
   }
   .group1 {
-    height: 560px;
+    height: 600px;
     width: 345px;
     float: left;
     overflow: hidden;
     position: relative;
   }
   .group2 {
-    height: 560px;
-    width: 1050px;
+    height: 600px;
+    width: 1113px;
     float: left;
     margin-left: 60px;
     overflow: hidden;
   }
   .group3 {
-    height: 560px;
-    width: 700px;
+    height: 600px;
+    width: 760px;
     float: left;
     margin-left: 60px;
     overflow: hidden;
   }
   .group4 {
-    height: 560px;
-    width: 875px;
+    height: 600px;
+    width: 950px;
     float: left;
     margin-left: 60px;
     overflow: hidden;
   }
   .group5 {
-    height: 560px;
-    width: 340px;
+    height: 600px;
+    width: 380px;
     float: left;
     margin-left: 60px;
     overflow: hidden;
@@ -100,25 +124,25 @@ a:hover {
     padding: 0;
   }
   .full-tile {
-    width: 340px;
-    height: 560px;
+    width: 343px;
+    height: 600px;
     float: left;
   }
   .double-tile {
-    width: 340px;
-    height: 340px;
+    width: 370px;
+    height: 370px;
     float: left;
     background: #f0c60a;
   }
   .double-vertical-tile {
-    width: 340px;
-    height: 165px;
+    width: 370px;
+    height: 180px;
     float: left;
     background: #f0c60a;
   }
   .square-tile {
-    width: 165px;
-    height: 165px;
+    width: 180px;
+    height: 180px;
     float: left;
     background: #f0c60a;
   }
@@ -133,9 +157,14 @@ a:hover {
     float: left;
   }
   .col-1 {
-    width: 350px;
+    width: 380px;
     float: left;
   }
+  .col-2 {
+width: 353px;
+float: left;
+overflow: hidden;
+}
   .no-margin {
     margin: 0px;
   }
@@ -146,7 +175,7 @@ a:hover {
   .aj-scroll-arrow {
     position: fixed;
     right: 0%;
-    top: 4.8%;
+    top: 6.8%;
     width: 9%;
     z-index: 999;
   }
@@ -162,7 +191,7 @@ a:hover {
     overflow: auto;
     position: relative;
     width: 100%;
-    height: 750px;
+    height: 800px;
     overflow-x: hidden;
   }
   .aj-group .page-title {
@@ -172,8 +201,8 @@ a:hover {
     display: block;
   }
   .aj-group h1 {
-    font-weight: normal;
-    font-size: 1.8em;
+    font-weight: 500;
+    font-size: 1.7em;
     line-height: 30px;
     text-transform: uppercase;
     color: #252525;
@@ -186,7 +215,7 @@ a:hover {
     border-top: 1px solid #DAD7D7;
   }
   .aj-group .intro {
-    font-size: 1.2em;
+    font-size: 1.3em;
     color: #252525;
     opacity: 0.8;
     margin-bottom: 6%;
@@ -231,4 +260,21 @@ a:hover {
   .aj-group .aj-meta i {
     color: #f0c60a;
   }
+
+  .casestudy-content .testimonials {
+color: #413A3A;
+}
+.reading-canvas {
+color: #252525;
+-webkit-column-width: 22em;
+-moz-column-width: 22em;
+column-width: 22em;
+-webkit-column-gap: 3rem;
+-moz-column-gap: 3rem;
+column-gap: 3em;
+max-width: none;
+height: 66vh;
+line-height: 23px;
+}
+
 }
