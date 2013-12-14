@@ -193,6 +193,14 @@ a:hover {
   margin-left: 60px;
   position: relative;
 }
+.group8 {
+  height: 520px;
+  width: 620px;
+  float: left;
+  overflow: hidden;
+  margin-left: 60px;
+  position: relative;
+}
 /*Tiles*/
 .aj-live-tile {
   color: #FFF;
@@ -393,6 +401,7 @@ a:hover {
   color: #f0c60a;
   margin: 0;
   font-size: 2.5em;
+  line-height: 38px;
 }
 .casestudy-content .meta {
   font-size: 18px;
@@ -452,10 +461,11 @@ a:hover {
   margin: 0px;
   padding: 0px;
 }
+
 .casestudy-content .bullet-point .item .index {
   display: block;
   width: 64px;
-  height: 75px;
+  height: 93px;
   float: left;
   margin-right: 25px;
   font-size: 5em;
@@ -614,4 +624,24 @@ margin-bottom: 45px;
 }
 .category-box .tags b{
 	margin-right:10px;
+}
+
+.logo-listing{
+	color: #000;
+list-style-type: none;
+padding-left: 0px;
+}
+.logo-listing li{
+padding: 5px;
+display: inline-block;
+background: #F0C60A;
+margin-right: 5px;
+width: 28%;
+margin-bottom: 5px;
+text-align: center;
+height: 43px;
+line-height: 43px;
+}
+.total-rank-span{
+	font-size: 39px !important;
 }
