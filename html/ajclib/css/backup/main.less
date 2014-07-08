@@ -1,0 +1,275 @@
+/*
+Theme Name:     Ajency
+Theme URI:      http://www.Ajency.in/
+Description:    Theme for Ajency
+Author:         Amit for Ajency.in
+Author URI:     http://ajency.in/
+Template:       Ajency
+Version:        0.1.0
+*/
+
+
+
+/****Webfonts****/
+
+
+/****Sitewide Variables****/
+@brown: #603913;
+@yellow:#f0c60a;
+@c-grey: #252525;
+@error-red: #B94A48;
+@l-grey: #F8F8F8;
+@3-grey: #333333;
+a{text-decoration:none;}
+a:hover{text-decoration:none !important;}
+/* Deskstop */
+html {
+	font-size: 95%;
+	-webkit-text-size-adjust: 95%;
+	-ms-text-size-adjust: 95%;
+}
+body{
+	font-size:95%;
+	-webkit-text-size-adjust: 95%;
+	-ms-text-size-adjust: 95%;
+	font-family: 'Source Sans Pro', sans-serif !important;
+}
+/* Tablet  */
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+body{
+	font-size: 87%;
+	-webkit-text-size-adjust: 87%;
+	-ms-text-size-adjust: 87%;
+}
+}
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
+body{
+	font-size: 87%;
+	-webkit-text-size-adjust: 87%;
+	-ms-text-size-adjust:  87%;
+}
+}
+@media (min-width: 768px) and (max-width: 979px) {
+body{
+	font-size:  87%;
+	-webkit-text-size-adjust:  87%;
+	-ms-text-size-adjust:  87%;
+}
+
+}
+
+/* Mobile */
+@media (max-width: 767px){
+	body{
+		font-size: 30%;
+		-webkit-text-size-adjust: 30%;
+		-ms-text-size-adjust: 30%;
+	}
+}
+
+
+
+/* Home Grid */
+.aj-group {
+	background: #DADADA;
+	position: absolute;
+	top:10%;
+	bottom:10%;
+	left:6%;
+		.page-title{
+			font-size: 2.2em;
+			margin:0px;
+			font-weight:300;
+		}
+		h1{
+			font-weight: normal;
+			font-size: 1.8em;
+			line-height: 33px;
+			text-transform: uppercase;
+			color:@c-grey;
+			.highlight{
+				color:@yellow;
+			}
+		}
+		.intro{
+			font-size: 1.3em;
+			color:@c-grey;
+			opacity:0.8;
+			margin-bottom: 6%;
+		}
+		.related-link{
+			list-style: none;
+			padding: 0px;
+			margin-bottom:7%;
+			li{
+				border-bottom: 1px solid #CCC;
+				padding: 6px 6px 6px 0px;
+				width: 75%;
+				a{
+					font-size:1.1em;
+					color:@brown;
+				}
+			}
+		}
+		.ajency-detail{
+			position: absolute;
+			width: 100%;
+			bottom: 0%;
+			img{
+				float: left;
+				max-width:100%;
+				width: 45%;
+				margin-top:10px;
+			}
+			.contact-us{
+				float:right;
+				text-align: right;
+				margin-top: 6px;
+				font-size: 1.1em;
+				color:@brown;
+			}
+		}
+		
+}
+img{
+	width:100%;
+}
+
+
+
+
+/* Tablet Home Grid */
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+.aj-group {
+	.related-link{
+			li{
+				width: 80%;
+			}
+		}
+	}
+}
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
+.aj-group {
+	.related-link{
+			li{
+				width: 75%;
+			}
+		}
+	}
+	[class*='col-'] {
+		width: auto;
+		float: none;
+		margin-left: 0px;
+		margin-right: 0px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+}
+@media (min-width: 768px) and (max-width: 979px) {
+.aj-group {
+	.related-link{
+			li{
+				width: 75%;
+			}
+		}
+	}
+}
+
+
+/* Mobile Home Grid */
+
+
+ #lft-mar-1{
+	left:37%;
+ }
+  #lft-mar-2{
+	left:113%;
+ }
+ 
+ 
+ /* Grids*/
+ 
+ 
+#full-grid-tiles-1{
+	position: absolute;
+	overflow:hidden;
+	top: 8%;
+	bottom: 0%;
+	left: 0%;
+}
+#full-grid-tiles-2{
+	position: absolute;
+	overflow:hidden;
+	top: 8%;
+	bottom: 0%;
+	left: 35%;
+}
+#full-grid-tiles-3{
+	position: absolute;
+	overflow:hidden;
+	top: 8%;
+	bottom: 0%;
+	left: 70%;
+}
+#double-vertical-tile-up{
+	background: #F00;
+	position: absolute;
+	overflow: hidden;
+	top: 0%;
+	bottom: 34%;
+}
+#double-vertical-tile-down{
+	background: #F00;
+	position: absolute;
+	overflow: hidden;
+	bottom: 0%;
+	top: 34%;
+}
+#double-tile-up{
+	background: #00EBFF;
+	position: absolute;
+	overflow: hidden;
+	bottom: 70%;
+	top: 0%;
+}
+#double-tile-down{
+	background: #00EBFF;
+	position: absolute;
+	overflow: hidden;
+	top: 70%;
+	bottom: 0%;
+}
+#single-tile-down-left{
+	background: #000;
+	position: absolute;
+	overflow: hidden;
+	top: 70%;
+	bottom: 0%;
+	right: 53%;
+}
+#single-tile-down-right{
+	background: #00EBFF;
+	position: absolute;
+	overflow: hidden;
+	top: 70%;
+	bottom: 0%;
+	left:53%;
+}
+#single-tile-middle-left{
+	background: #666;
+	position: absolute;
+	overflow: hidden;
+	top: 34%;
+	bottom: 34%;
+	right: 53%;
+}
+#single-tile-middle-right{
+	background: #666;
+	position: absolute;
+	overflow: hidden;
+	top: 34%;
+	bottom: 34%;
+	left:53%;
+}

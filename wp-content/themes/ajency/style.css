@@ -1,0 +1,37 @@
+/*
+Theme Name: Ajency
+Theme URI: http://ajency.in/
+Description: A simple responsive theme based on the Bootstrap framework. Includes multiple page templates, two different sidebars and a theme options panel.
+Version: 1.0
+Template: wordpress-bootstrap-master
+Author: Jarryd for Ajency.in
+Author URI: http://ajency.in/
+*/
+
+.footer-menu{
+	z-index: 99999;
+	position: relative;
+}
+.ajency-text p {
+	margin-top: 0;
+}
+.full-container {
+	z-index: 0;
+}
+.scroll-content {
+	height: auto;
+}
+.share-intro {
+	position: absolute;
+	bottom: -10px;
+	background: #fff;
+}
+.blog .share-intro, .single-post .share-intro, .category .share-intro {
+	bottom: 0;
+}
+.aj-group .ajency-detail {
+	bottom: 5px !important;
+}
+.modalview .container {
+	cursor: auto;
+}
