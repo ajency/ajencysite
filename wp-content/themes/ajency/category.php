@@ -124,13 +124,25 @@ get_header(); ?>
            <div class="casestudy-content last-col">
             
                   <p>
-						<ul class="footer-menu">
-							<li> <a href="index.html">Home</a></li>
-							<li> <a href="hiring.html">Working at ajency.in</a></li>
-							<li> <a href="secondcareer.html">Second Carrer</a></li>
-							<li> <a href="internship.html">Internship & Projects</a></li>
-							<li> <a href="hiring.html">Web Developers </a></li>
-						</ul>
+						<?php
+							$defaults = array(
+								'menu'            => 'footer-menu',
+								'container'       => false,
+								'menu_class'      => 'footer-menu',
+								'menu_id'         => '',
+								'echo'            => true,
+								'fallback_cb'     => 'wp_page_menu',
+								'before'          => '',
+								'after'           => '',
+								'link_before'     => '',
+								'link_after'      => '',
+								'depth'           => 0,
+								'walker'          => ''
+							);
+
+							wp_nav_menu( $defaults );
+						?>
+
 						<b>
 							JUMP TO NEXT <SPAN>PAGE <img src="<?php echo get_stylesheet_directory_uri(); ?>/library/images/arrowRight.png" /></SPAN> 
 							
