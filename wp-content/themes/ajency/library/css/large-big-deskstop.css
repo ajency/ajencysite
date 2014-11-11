@@ -15,9 +15,12 @@ a {
 a:hover {
   text-decoration: none !important;
 }
-@media only screen and (min-width: 1420px) {
+@media only screen and (min-width: 1920px) {
 .home-page{
-	width: 5625px !important;
+	width: 7525px !important;
+}
+body .p-l-n h1 {
+	line-height:1em;
 }
 body .aj-live-tile h1 {
 font-weight: 100;
@@ -49,7 +52,10 @@ height: 40px;
 body .outer-nav.vertical {
 	width: 43%;
 }
-
+body  .casestudy-content p {
+	line-height: 30px;
+	font-weight: 300;
+}
 .live-tile p {
 display: block;
 font-size: 1.4em !important;
@@ -57,11 +63,15 @@ line-height: 1.2em;
 margin: 0;
 font-weight: 100;
 }
+body .bullet-pt li {
+	line-height: 26px;
+	font-weight: 300;
+}
 .hire-page{
 	width: 6800px!important;
 }
   body {
-    font-size: 95%;
+    font-size: 130%;
     -webkit-text-size-adjust: 95%;
     -ms-text-size-adjust: 95%;
     overflow-y: hidden;
@@ -116,21 +126,35 @@ margin: -4px 0 3px
     float: left!important;
   }
   body .Center-Block{
-	height: 600px;
+	height: 820px;
   }
+  body .main-page {
+	width: 1030px;
+}
+body .p-l-n {
+	height: 640px;
+	overflow:visible !important;
+}
+body .share-intro {
+	bottom: -190px;
+}
   body .column-1{
 	 width: 395px;
 	  float: left;
 	  overflow: hidden;
 	  position: relative;
+	
 }
-
+[class*="column-"]:first-child {
+margin-left: 0px !important;
+padding-left:60px !important;
+}
 
 body .column-2{
 		
-		  width: 480px;
+		  width: 520px;
 		  float: left;
-		  margin-left: 60px;
+		  margin-left:0px;
 		  overflow: hidden;
 	  position: relative;
 }
@@ -224,25 +248,25 @@ margin-bottom: 40px;
     padding: 0;
   }
   .full-tile {
-    width: 370px;
-    height: 600px;
+    width: 500px;
+    height:755px;
     float: left;
   }
   .double-tile {
-    width: 370px;
-    height: 370px;
+    width: 500px;
+    height: 500px;
     float: left;
     background: #f0c60a;
   }
   .double-vertical-tile {
-    width: 370px;
-    height: 180px;
+    width: 500px;
+    height: 245px;
     float: left;
     background: #f0c60a;
   }
   .square-tile {
-    width: 180px;
-    height: 180px;
+    width: 245px;
+    height: 245px;
     float: left;
     background: #f0c60a;
   }
@@ -257,13 +281,14 @@ margin-bottom: 40px;
     float: left;
   }
 body .column-7 {
-width: 1140px !important;
+width: 1530px !important;
 }
 body .column-8{
-width: 1520px !important;
+width: 2300px !important;
+padding-left:60 !important;
 }
   .col-1 {
-width: 380px;
+width: 510px;
 float: left;
 }
   .col-2 {
@@ -272,7 +297,7 @@ float: left;
 overflow: hidden;
 }
 .col-3 {
-width: 190px;
+width: 250px;
 
 }
   .no-margin {
@@ -299,9 +324,8 @@ width: 190px;
   }
   .main-content {
     overflow: auto;
-  
-    width: 100%;
-    height: 650px;
+   width: 100%;
+    height: 850px;
    overflow-x: scroll;
   }
   .aj-group .page-title {
@@ -328,6 +352,8 @@ width: 190px;
     font-size: 1.3em;
     color: #252525;
     opacity: 0.8;
+	line-height:1.2em;
+	font-weight:300;
     margin-bottom: 6%;
   }
   .aj-group .related-link {

@@ -17,7 +17,8 @@ function ajency_theme_head_script() {
       <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
       <link href="<?php echo get_stylesheet_directory_uri(); ?>/library/css/ajency-lib.css" rel="stylesheet" />
       <link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_directory_uri(); ?>/library/css/transition/MetroJs.css" />
-      <link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_directory_uri(); ?>/style.css" />
+		      <link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_directory_uri(); ?>/library/css/large-big-deskstop.css" />
+	  <link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_directory_uri(); ?>/style.css" />
       <div id="fb-root"></div>
       <script>(function(d, s, id) {
          var js, fjs = d.getElementsByTagName(s)[0];

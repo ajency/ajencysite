@@ -278,11 +278,12 @@ right: 0;
 	  margin-left: 60px;
 	  position: relative;
 }
+/***
 [class*="column-"]:first-child {
 margin-left: 0px !important;
 padding-left: 0px !important;
 }
-
+****/
 .column-2{
 		
 		  width: 480px;
